@@ -1,0 +1,238 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(51, 51, 51); /* 80% opacity */
+    color: rgba(255, 255, 255, 0.9); /* 90% opacity */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    background: rgb(28, 28, 28); /* 80% opacity */
+}
+
+.contact-info span {
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color:white ;/* 90% opacity */
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height:60px;
+    background: rgb(51, 51, 51); /* 80% opacity */
+}
+
+.logo {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 70px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* 90% opacity */
+    font-size: 1em;
+}
+
+.cta a {
+    
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9); /* 90% opacity */
+    background: rgb(51, 51, 51); /* 80% opacity */
+    padding: 10px 20px;
+    border: 2px solid white; /* White border */
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background: white; /* Full opacity on hover */
+    color:black;
+    
+}
+
+.hero {
+    background: rgba(52, 52, 52, 0.674); /* Translucent blue background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 100px 20px;
+    position: relative; /* Ensure z-index works */
+}
+
+.hero::before {
+    content: ""; /* Create pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 570px;
+    background-image: url('hero.jpeg'); /* Background image */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1; /* Send image to back */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btns {
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9); /* 90% opacity */
+    background: rgba(7, 7, 7, 0.601); /* 90% opacity */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background color and transform */
+}
+
+.hero-buttons .btns:hover {
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+    background: rgba(7, 7, 7, 0.953); /* Full opacity green on hover */
+}
+
+.hero-buttons .btns.secondary {
+    background: rgba(7, 7, 7, 0.601); /* 90% opacity */
+}
+
+.hero-buttons .btns.secondary:hover {
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+    background: rgba(7, 7, 7, 0.953); /* Full opacity red on hover */
+}
+
+
+.services {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(207, 207, 207); /* 90% opacity gray */
+    z-index: -1;
+}
+
+.services {
+    z-index: 2; /* Ensure the content is above the pseudo-element */
+}
+
+
+.service {
+    text-align: center;
+    max-width: 300px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 0px;
+    background: rgba(137, 135, 135, 0.9); /* 90% opacity */
+}
+
+.about-us h2 {
+    margin-bottom: 30px;
+}
+
+.our-services {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(240, 240, 240, 0.9); /* 90% opacity */
+}
+
+.our-services h2 {
+    margin-bottom: 20px;
+}
+
+.service-box {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.service-box img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service-box h3 {
+    margin-top: 10px;
+}
+
+footer {
+    background: rgba(51, 51, 51, 0.8); /* 80% opacity */
+    color: rgba(255, 255, 255, 0.9); /* 90% opacity */
+    text-align: center;
+    padding: 20px 0;
+}
+.btn {
+    border-radius: 15px;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8); /* Translucent black background */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: rgba(51, 51, 51, 1); /* Fully opaque black on hover */
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+}
+.creative-design-img{
+    height:244px;
+    width:450px;
+    margin-left: 20px;
+}
+.retina-ready-img{
+    height:244px;
+    width:400px;
+    margin-left: 30px;
+}
